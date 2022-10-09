@@ -2,13 +2,18 @@
 
 namespace Binary_Search_Tree
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("Welcome To the Binary Search Tree Program");
 
-           
+            BinarySearchTree<int> binarySearchTree = new BinarySearchTree<int>(56);
+            binarySearchTree.Insert(30);
+            binarySearchTree.Insert(70);
+            binarySearchTree.Display();
+
+
         }
     }
 }
